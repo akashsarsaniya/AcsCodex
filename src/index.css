@@ -1,0 +1,125 @@
+:root {
+  /* Theme Colors */
+  --theme-color: #0a4058;
+  --theme-color-dark: #6a7f33;
+  --theme-color-light: #9ab55a;
+  
+  /* Section Spacing */
+  --section-padding: 1rem 1rem !important;
+  --section-padding-mobile: 2rem 1.5rem;
+  --container-max-width: 1200px;
+  --section-gap: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: #333;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.service-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Common icon styling */
+.service-title i {
+  font-size: 22px;
+}
+
+/* Individual colors */
+.python i {
+  color: #3776ab; /* Python Blue */
+}
+
+.web i {
+  color: #4f46e5; /* Indigo */
+}
+
+.aspnet i {
+  color: #0078d4; /* Microsoft Blue */
+}
+
+.node i {
+  color: #3c873a; /* Node Green */
+}
+
+.seo i {
+  color: #16a34a; /* Green */
+}
+
+.social i {
+  color: #0ea5e9; /* Sky Blue */
+}
+
+.ppc i {
+  color: #f97316; /* Orange */
+}
+
+.content i {
+  color: #9333ea; /* Purple */
+}
+
+.reputation i {
+  color: #facc15; /* Gold */
+}
+
+.cro i {
+  color: #22c55e; /* Emerald */
+}
+
+.amazon i {
+  color: #ff9900; /* Amazon Orange */
+}
+
+/* Hover effect (optional but nice) */
+.service-card:hover i {
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
+}
+.bullet-text {
+  position: relative;
+  padding-left: 20px;
+}
+
+.bullet-text::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0d0a08;
+  font-size: 20px;
+  line-height: 1;
+}
