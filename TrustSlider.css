@@ -1,0 +1,111 @@
+.trust-section {
+    padding: 1.5rem 0;
+    /* Tightened for 2-column mobile */
+    background: #f8fafc;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.trust-desktop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trust-mobile-slider {
+    display: none;
+}
+
+.trust-card {
+    background: #ffffff;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: 320px;
+    /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f1f5f9;
+}
+
+.trust-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+}
+
+.trust-text {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.5;
+    margin: 0;
+    overflow-y: auto;
+    /* Scroll if content is too long */
+    padding-right: 5px;
+    width: 100%;
+}
+
+/* Custom Scrollbar for the cards */
+.trust-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.trust-text::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+
+.trust-text strong {
+    color: var(--theme-color);
+}
+
+@media (max-width: 1024px) {
+    .trust-desktop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .trust-desktop-grid {
+        display: none;
+    }
+
+    .trust-mobile-slider {
+        display: block;
+    }
+
+    .trust-section {
+        padding: 1.5rem 0.5rem 0rem;
+    }
+
+    .trust-card {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        height: 135px;
+        /* Fixed height for mobile */
+    }
+
+    .trust-card-icon {
+        font-size: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .trust-text {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    /* Swiper dots styling */
+    .trust-mobile-slider .swiper-pagination-bullet-active {
+        background: var(--theme-color) !important;
+    }
+
+    .trust-mobile-slider .swiper {
+        padding-bottom: 2.5rem !important;
+    }
+}
