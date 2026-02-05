@@ -1,0 +1,111 @@
+.about-page {
+  font-family: "Inter", sans-serif;
+  background: #f7f9fc;
+  color: #222;
+}
+
+/* HERO */
+.about-hero {
+  background: linear-gradient(135deg,#0d6efd,#7db0ff);
+  padding: 100px 40px 120px;
+  text-align:center;
+  color:#fff;
+}
+.hero-content h1 { font-size:42px; font-weight:700; }
+.hero-content p { margin-top:12px; font-size:18px; max-width:750px; margin:auto; }
+
+.hero-stats {
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  margin-top:40px;
+}
+.hero-stats div{
+  text-align:center;
+}
+.hero-stats h2{ font-size:34px; margin-bottom:5px; font-weight:800; }
+
+/* CONTAINER */
+.container{ width:85%; max-width:1200px; margin:auto; }
+
+/* Sections */
+.section{ margin-bottom:70px; }
+.section-title{ font-size:30px; font-weight:700; margin-bottom:15px; }
+
+/* Services Cards */
+.service-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-top:25px;
+}
+.service-card{
+  background:#fff;
+  padding:22px;
+  border-radius:14px;
+  border:1px solid #e5e9f0;
+  transition:.3s;
+  box-shadow:0 3px 15px rgba(0,0,0,0.06);
+}
+.service-card:hover{ transform:translateY(-5px); border-color:#0d6efd; }
+.service-card h3{ font-size:20px; margin-bottom:6px; color:#0d6efd; }
+
+/* Why Choose Us */
+.why-cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:30px;
+}
+.why-cards div{
+  background:#fff;
+  padding:22px;
+  border-radius:12px;
+  border:1px solid #e4e8ef;
+  text-align:center;
+  transition:.3s;
+}
+.why-cards div:hover{transform:translateY(-5px); border-color:#0d6efd;}
+.why-cards span{ font-size:30px; display:block; margin-bottom:8px; color:#0d6efd; }
+
+/* Vision Box */
+.vision-box{
+  text-align:center;
+  padding:30px;
+  background:white;
+  border-left:5px solid #0d6efd;
+  border-radius:8px;
+  font-size:17px;
+}
+
+/* CTA Section */
+.cta-section{
+  text-align:center;
+  background:#0a4058;
+  color:white;
+  padding:60px 30px;
+  border-radius:14px;
+}
+.cta-btn{
+  background:white;
+  color:#0d6efd;
+  padding:12px 32px;
+  font-weight:700;
+  display:inline-block;
+  margin-top:15px;
+  border-radius:8px;
+  text-decoration:none;
+  transition:.3s;
+}
+.cta-btn:hover{background:#e8f1ff;}
+
+/* Responsive */
+@media(max-width:900px){
+  .service-grid,.why-cards{grid-template-columns:repeat(2,1fr);}
+  .hero-stats{flex-wrap:wrap;gap:30px;}
+}
+@media(max-width:600px){
+  .service-grid,.why-cards{grid-template-columns:1fr;}
+  .hero-content h1{font-size:30px;}
+  .about-hero{padding:80px 20px;}
+}
